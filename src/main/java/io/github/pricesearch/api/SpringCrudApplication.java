@@ -1,4 +1,4 @@
-package com.example.springcrud;
+package io.github.pricesearch.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

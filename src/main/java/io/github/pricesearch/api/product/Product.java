@@ -1,9 +1,9 @@
-package com.example.springcrud.record;
+package io.github.pricesearch.api.product;
 
 import lombok.Data;
 
 @Data
-public class Record {
+public class Product {
 
     private String id;
 
