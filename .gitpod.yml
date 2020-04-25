@@ -2,7 +2,7 @@ image: gitpod/workspace-mongodb
 
 tasks:
   - name: Opening Swagger UI
-    command: gp await-port 8080 && gp preview $(gp url 8080)/swagger-ui.html; exit
+    command: gp await-port 8080 && gp preview $(gp url 8080)/swagger-ui.html && exit
   - name: MongoDB # Start MongoDB
     command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
   - name: Project # Start the project in development mode
