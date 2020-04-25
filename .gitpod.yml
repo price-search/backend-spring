@@ -14,10 +14,10 @@ tasks:
       exit
   - name: MongoDB # Start MongoDB
     command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
-  - name: spring-boot:run # Start the project in development mode
+  - name: Project # Start the project in development mode
     init: ./mvnw dependency:resolve && ./mvnw compile # This runs during Gitpod prebuild
     command: ./mvnw spring-boot:run
-  - command: "" # Opens a blank terminal at the right side
+  - name: "Terminal" # Opens a blank terminal at the right side
 
 ports:
   - port: 8080
