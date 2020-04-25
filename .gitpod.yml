@@ -13,12 +13,12 @@ ports:
 
 vscode:
   extensions:
+    - redhat.java@0.60.0:Oq41RaXQP8j6cjNglFQqAQ==
     - GabrielBB.vscode-lombok@1.0.1:IAvPOHnFmUYZpRqErUNAiQ==
     - vscjava.vscode-spring-initializr@0.4.6:WOgtgIwX3Ngy4pM9ArXjCQ==
     - vscjava.vscode-spring-boot-dashboard@0.1.8:HcUY2EBWUzLI8LYU/I2Flg==
-    - Pivotal.vscode-spring-boot@1.15.0:8Ly0sETgWlmYi2D3uXi7FA==
-    - vscjava.vscode-java-test@0.22.2:ZBznuSuKUJo5X8dZe6b9Nw==
-    - vscjava.vscode-maven@0.21.0:37ZOg7jK2M04yXsE+ItbZg==
+    - Pivotal.vscode-spring-boot@1.17.0:mGdRFTP1eLVuk7lwGhEWRg==
     - vscjava.vscode-java-dependency@0.9.0:0lYT1u+1Pgn1oAUG5na4cQ==
-    - vscjava.vscode-java-debug@0.25.0:kzrHloDvSyL81jltUd00Eg==
-    - redhat.java@0.60.0:Oq41RaXQP8j6cjNglFQqAQ==
+    - vscjava.vscode-java-debug@0.25.1:yUSBAu6nHsJCoKr2noLqvw==
+    - vscjava.vscode-maven@0.21.2:eUANtFfmlMMlJemdLOZs4A==
+    - vscjava.vscode-java-test@0.22.3:r0wZhaCeRHUpyUd2S8C/Tw==
