@@ -2,22 +2,13 @@ image: gitpod/workspace-mongodb
 
 tasks:
   - name: Opening Swagger UI
-    command: |
-      # Wait until service is listening
-      until $(curl --output /dev/null --silent --head --fail http://localhost:8080); do
-        printf '.'
-        sleep 5
-      done
-      # Open Swagger UI in Gitpod preview
-      gp preview http://localhost:8080/swagger-ui.html
-      # Close the terminal
-      exit
+    command: gp await-port 8080 && gp preview $(gp url 8080)/swagger-ui.html; exit
   - name: MongoDB # Start MongoDB
     command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
   - name: Project # Start the project in development mode
     init: ./mvnw dependency:resolve && ./mvnw compile # This runs during Gitpod prebuild
     command: ./mvnw spring-boot:run
-  - name: "Terminal" # Opens a blank terminal at the right side
+  - name: Terminal # Opens a blank terminal at the right side
 
 ports:
   - port: 8080
