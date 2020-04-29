@@ -12,6 +12,7 @@ RUN set -ex; \
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions; \
     sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="agnoster"' ~/.zshrc; \
     sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' ~/.zshrc; \
+    sed -i '/prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"/c\prompt_segment black default "%(!.%{%F{yellow}%}.)%n"' ~/.oh-my-zsh/themes/agnoster.zsh-theme; \
     sudo chsh -s /usr/bin/zsh
 
 RUN set -ex;\ 
