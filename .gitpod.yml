@@ -10,7 +10,7 @@ tasks:
     init: ./mvnw dependency:resolve && ./mvnw compile # This runs during Gitpod prebuild
     command: ./mvnw spring-boot:run
   - name: Terminal # Opens a blank terminal at the right side
-    command: zsh; clear
+    command: zsh
 
 ports:
   - port: 8080
